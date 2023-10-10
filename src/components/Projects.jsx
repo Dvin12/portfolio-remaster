@@ -57,10 +57,10 @@ export default function Projects() {
   return (
     <section>
       <div className="relative flex items-center px-9">
-        <h2 className="text-2xl font-bold tracking-tighter text-veryDarkGrey ">
+        <h2 className="text-2xl font-bold tracking-tighter text-veryDarkGrey dark:text-white ">
           PROJECTS
         </h2>
-        <span className="h-[2px] bg-veryDarkGrey w-full absolute left-[9.8rem]" />
+        <span className="h-[2px] bg-veryDarkGrey w-full absolute left-[9.8rem] dark:bg-white" />
       </div>
       <div className="flex flex-col my-10">
         {projects.map((project, i) => (

@@ -1,9 +1,9 @@
 import MobileNav from "./MobileNav";
 
-export default function Navigation() {
+export default function Navigation({ setTheme, theme }) {
   return (
     <>
-      <MobileNav />
+      <MobileNav setTheme={setTheme} theme={theme} />
     </>
   );
 }

@@ -9,9 +9,9 @@ export default function Introduction() {
           alt=""
           className=" bg-[#FFFF]  w-[50%] h-[18rem] object-cover rounded z-30"
         />
-        <div className="absolute top-4 rounded bg-darkGrey w-[50%] left-[30%] h-full z-0 bg-opacity-10"></div>
+        <div className="absolute top-4 rounded bg-darkGrey w-[50%] left-[30%] h-full z-0 bg-opacity-10 dark:bg-lightBlack dark:bg-opacity-80"></div>
       </article>
-      <article className="px-9 mt-14 text-veryDarkGrey">
+      <article className="px-9 mt-14 text-veryDarkGrey dark:text-white">
         <p className="text-3xl font-medium tracking-tight ">Hi, I'm Edvin</p>
         <h1 className="text-5xl font-bold tracking-[-0.06em] leading-[0.95]">
           WEB <br /> DEVELOPER
@@ -20,18 +20,15 @@ export default function Introduction() {
           Currently located in Vilnius, Lithuania. I'm an aspiring developer
           that is hard working, detail-oriented and always up for a challenge.
         </p>
-        <section className="flex items-center gap-3 ">
-          <button className="px-8 py-2 font-bold tracking-tighter bg-darkGrey bg-opacity-10">
+        <section className="flex items-center justify-between my-6 text-veryDarkGrey dark:text-white">
+          <button className="px-8 py-2 font-bold tracking-tighter bg-darkGrey bg-opacity-10 dark:bg-lightBlack dark:bg-opacity-60">
             Contact
           </button>
-          <button className="px-8 py-2 font-bold tracking-tighter bg-darkGrey bg-opacity-10">
+          <button className="py-2 font-bold tracking-tighter px-9 bg-darkGrey bg-opacity-10 dark:bg-lightBlack dark:bg-opacity-60">
             Download CV
           </button>
         </section>
       </article>
-      <div className="flex items-center justify-center h-full my-6">
-        <BiSolidDownArrow size={40} color="#2C3333" />
-      </div>
     </section>
   );
 }
