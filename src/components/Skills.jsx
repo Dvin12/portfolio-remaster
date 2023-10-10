@@ -44,7 +44,9 @@ export default function Skills() {
   return (
     <section className="my-4 px-9">
       <div className="relative flex items-center">
-        <h2 className="text-2xl font-bold tracking-tighter ">SKILLS</h2>
+        <h2 className="text-2xl font-bold tracking-tighter text-veryDarkGrey ">
+          SKILLS
+        </h2>
         <span className="h-[2px] bg-veryDarkGrey w-full absolute left-[4.8rem]" />
       </div>
       <ul className="grid items-center justify-center grid-flow-row grid-cols-2 gap-10 py-8 text-lg font-semibold tracking-tighter">

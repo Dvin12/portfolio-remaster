@@ -5,8 +5,10 @@ export default function Project({ project }) {
   const { name, image, info, builtWith, live, github } = project;
 
   return (
-    <article className="h-[25rem]">
-      <h3 className="px-5 text-xl font-bold tracking-tighter ">{name}</h3>
+    <article className="h-[25rem] ">
+      <h3 className="px-5 text-xl font-bold tracking-tighter text-veryDarkGrey ">
+        {name}
+      </h3>
       <section className="relative ">
         <div className="z-30 flex ">
           <img
@@ -16,7 +18,9 @@ export default function Project({ project }) {
           />
         </div>
         <aside className="absolute  right-0 px-5 bg-darkGrey bg-opacity-10 w-[21rem] h-auto top-10 rounded-bl-lg py-4 ">
-          <p className="pt-[8rem] font-bold tracking-tighter">{info}</p>
+          <p className="pt-[8rem] font-bold tracking-tighter text-veryDarkGrey">
+            {info}
+          </p>
           <section className="flex items-center justify-between mt-2">
             <div className="flex">
               {builtWith.map((item) => (

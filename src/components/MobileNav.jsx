@@ -23,8 +23,8 @@ export default function MobileNav() {
             <HiOutlineMenuAlt3 size={30} color="#2C3333" />
           </button>
         )}
-        <button className="fixed right-4 bottom-4" onClick={handleClick}>
-          <BiSolidMoon size={30} color="#2C3333" />
+        <button className="fixed z-40 right-4 bottom-3" onClick={handleClick}>
+          <BiSolidMoon size={35} color="#2C3333" />
         </button>
       </nav>
 

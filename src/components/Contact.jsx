@@ -15,18 +15,20 @@ export default function Contact() {
   return (
     <section className="my-4 px-9">
       <div className="relative flex items-center">
-        <h2 className="text-2xl font-bold tracking-tighter ">CONTACT</h2>
+        <h2 className="text-2xl font-bold tracking-tighter text-veryDarkGrey ">
+          CONTACT
+        </h2>
         <span className="h-[2px] bg-veryDarkGrey w-full absolute left-[6.9rem]" />
       </div>
       <ContactForm />
       <section className="flex flex-col gap-2">
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 text-lg font-medium">
           {contacts[0].phoneIcon}
-          <span>{contacts[0].phone}</span>
+          <span className="text-veryDarkGrey">{contacts[0].phone}</span>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 text-lg font-medium">
           {contacts[0].emailIcon}
-          <span>{contacts[0].email}</span>
+          <span className="text-veryDarkGrey">{contacts[0].email}</span>
         </div>
       </section>
     </section>
