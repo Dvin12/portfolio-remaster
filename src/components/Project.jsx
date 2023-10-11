@@ -18,7 +18,7 @@ export default function Project({ project }) {
           />
         </div>
         <aside className="absolute  right-0 px-5 bg-darkGrey bg-opacity-10 w-[21rem] h-auto top-10 rounded-bl-lg py-4 dark:bg-lightBlack dark:bg-opacity-60 ">
-          <p className="pt-[8rem] font-bold tracking-tighter text-veryDarkGrey dark:text-white">
+          <p className="pt-[8rem] font-medium  tracking-tight text-veryDarkGrey leading-relaxed dark:text-white">
             {info}
           </p>
           <section className="flex items-center justify-between mt-2">

@@ -8,20 +8,16 @@ import {
 } from "react-icons/bi";
 import { useState } from "react";
 
-export default function MobileNav({ setTheme, theme }) {
+export default function MobileNav({ theme, handleTheme }) {
   const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
     setIsActive((active) => !active);
   }
 
-  function handleTheme() {
-    setTheme((theme) => (theme === "dark" ? "light" : "dark"));
-  }
-
   return (
     <>
-      <nav className="flex items-center justify-between w-full py-6 px-9">
+      <nav className="flex items-center justify-between w-full py-6 px-9 xl:hidden ">
         <span className="text-2xl font-bold tracking-tighter text-veryDarkGrey dark:text-white">
           EV
         </span>
@@ -50,7 +46,7 @@ export default function MobileNav({ setTheme, theme }) {
       <section
         className={`fixed top-0 left-0 z-50 w-full h-screen ${
           isActive ? " translate-x-0" : "translate-x-[100%]"
-        }  bg-veryDarkGrey bg-opacity-95 px-9 text-veryLightGrey transition-all duration-200 dark:bg-white dark:bg-opacity-95`}
+        }  bg-veryDarkGrey bg-opacity-95 px-9 text-veryLightGrey transition-all duration-200 dark:bg-veryLightGrey dark:bg-opacity-95`}
       >
         <button
           className="absolute right-9 top-6 dark:text-veryDarkGrey "
