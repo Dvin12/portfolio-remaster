@@ -1,6 +1,8 @@
+import Button from "./Button";
+
 export default function ContactForm() {
   return (
-    <form className="flex flex-col gap-6 py-8">
+    <form className="flex flex-col items-center justify-center w-full gap-6 py-8">
       <input
         type="text"
         placeholder="Your name"
@@ -17,6 +19,9 @@ export default function ContactForm() {
         placeholder="Your message"
         className="w-full p-4 text-xl font-bold bg-darkGrey bg-opacity-10 placeholder:text-veryDarkGrey placeholder:text-opacity-70 text-veryDarkGrey dark:text-white dark:bg-lightBlack dark:bg-opacity-70 dark:placeholder:text-white dark:placeholder:text-opacity-60"
       ></textarea>
+      <Button border="bottom" px={10}>
+        Submit
+      </Button>
     </form>
   );
 }

@@ -8,6 +8,7 @@ export default {
       Inter: ["Inter"],
     },
     colors: {
+      transparent: "transparent",
       veryLightGrey: "#E7F6F2",
       lightGrey: "#A5C9CA",
       darkGrey: "#395B64",

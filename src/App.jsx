@@ -21,7 +21,7 @@ export default function App() {
       <Header setTheme={setTheme} theme={theme} />
       <Skills />
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
     </Main>
   );
 }

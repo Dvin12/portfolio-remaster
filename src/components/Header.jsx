@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 
 export default function Header({ setTheme, theme }) {
   return (
-    <header>
+    <header className="relative">
       <Navigation setTheme={setTheme} theme={theme} />
       <Introduction />
     </header>

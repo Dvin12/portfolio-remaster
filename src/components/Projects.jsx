@@ -56,13 +56,13 @@ const projects = [
 export default function Projects() {
   return (
     <section>
-      <div className="relative flex items-center px-9 xl:px-56">
-        <h2 className="text-2xl font-bold tracking-tighter text-veryDarkGrey dark:text-white xl:text-5xl ">
+      <div className="relative flex items-center px-9 xl:px-36">
+        <h2 className="text-2xl font-bold tracking-tighter text-veryDarkGrey dark:text-white xl:text-4xl ">
           PROJECTS
         </h2>
-        <span className="h-[2.5px] bg-veryDarkGrey w-full absolute left-[9.8rem] dark:bg-white xl:left-[29rem]" />
+        <span className="h-[1px] bg-veryDarkGrey w-full absolute left-[9.8rem] dark:bg-white xl:left-1/2 xl:-translate-x-1/2 xl:w-1/2" />
       </div>
-      <div className="flex flex-col my-10">
+      <div className="flex flex-col my-10 xl:my-20 xl:gap-14">
         {projects.map((project, i) => (
           <Project key={i} project={project} />
         ))}
