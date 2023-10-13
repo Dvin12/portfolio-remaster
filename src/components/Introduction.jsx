@@ -2,7 +2,7 @@ import Button from "./Button";
 
 export default function Introduction() {
   return (
-    <section className="grid items-center justify-center grid-cols-1 grid-rows-1 mt-6 xl:grid-cols-2 xl:my-28 xl:mb-36 ">
+    <section className="grid items-center justify-center grid-cols-1 grid-rows-1 mt-6 xl:grid-cols-2 xl:my-28 ">
       <article className="relative z-40 flex items-center justify-center xl:order-last">
         <img
           src="./images/MAIN-1.png"
@@ -20,7 +20,7 @@ export default function Introduction() {
         <h1 className="text-5xl font-bold tracking-[-0.06em] leading-[0.95] xl:text-7xl">
           WEB <br /> DEVELOPER
         </h1>
-        <p className="py-3 pr-2 font-medium leading-relaxed xl:text-lg xl:w-[70%]">
+        <p className="py-3 pr-2 font-medium leading-relaxed xl:text-lg 2xl:w-[70%]  ">
           Currently located in Vilnius, Lithuania. I'm an aspiring developer
           that is hard working, detail-oriented and always up for a challenge.
         </p>
