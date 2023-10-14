@@ -13,8 +13,8 @@ const contacts = [
 
 export default function Contact() {
   return (
-    <section className="my-4 px-9 xl:px-0 ">
-      <div className="relative flex items-center xl:px-36">
+    <section className="my-4 px-9 xl:px-0 " id="contact">
+      <div className="relative flex items-center xl:px-36 xl:py-10">
         <h2 className="text-2xl font-bold tracking-tighter xl:text-4xl text-veryDarkGrey dark:text-white ">
           CONTACT
         </h2>

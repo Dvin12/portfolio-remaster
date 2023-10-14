@@ -19,5 +19,5 @@ export default {
       white: "#EEEEEE",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };

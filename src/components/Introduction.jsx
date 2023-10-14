@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import Button from "./Button";
 
 export default function Introduction() {
@@ -25,9 +26,18 @@ export default function Introduction() {
           that is hard working, detail-oriented and always up for a challenge.
         </p>
         <section className="flex items-center justify-between my-6 text-veryDarkGrey dark:text-white xl:justify-start xl:gap-3 xl:text-xl">
-          <Button px={10} border="bottom">
-            Contact
-          </Button>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-30}
+          >
+            <Button px={10} border="bottom">
+              Contact
+            </Button>
+          </Link>
+
           <Button px={10} border="top">
             Download CV
           </Button>

@@ -5,6 +5,8 @@ import {
   BiSolidSun,
 } from "react-icons/bi";
 
+import { Link } from "react-scroll";
+
 export default function DesktopNav({ theme, handleTheme }) {
   return (
     <nav className="items-center justify-between hidden px-20 py-10 xl:flex">
@@ -12,21 +14,29 @@ export default function DesktopNav({ theme, handleTheme }) {
         EV
       </span>
       <ul className="flex items-center justify-center gap-4 text-2xl font-bold tracking-tighter ">
-        <li>
-          <a
-            href="#"
+        <li className="cursor-pointer">
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-30}
             className="duration-200 hover:text-opacity-70 text-veryDarkGrey dark:text-white dark:hover:text-opacity-80"
           >
             projects
-          </a>
+          </Link>
         </li>
-        <li>
-          <a
-            href="#"
+        <li className="cursor-pointer">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-30}
             className="duration-200 hover:text-opacity-70 text-veryDarkGrey dark:text-white dark:hover:text-opacity-80"
           >
             contact
-          </a>
+          </Link>
         </li>
         <li>
           <button
@@ -45,12 +55,20 @@ export default function DesktopNav({ theme, handleTheme }) {
         <div className="h-8 dark:bg-white w-[2px] bg-veryDarkGrey"></div>
         <div className="flex flex-col items-center justify-center gap-1 py-2">
           <button className="duration-200 text-veryDarkGrey dark:text-white hover:text-opacity-70 dark:hover:text-opacity-60">
-            <a href="#">
+            <a
+              href="https://github.com/Dvin12"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BiLogoGithub size={34} />
             </a>
           </button>
           <button className="duration-200 text-veryDarkGrey dark:text-white hover:text-opacity-70 dark:hover:text-opacity-60">
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/ed-venclavovic/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BiLogoLinkedinSquare size={34} />
             </a>
           </button>

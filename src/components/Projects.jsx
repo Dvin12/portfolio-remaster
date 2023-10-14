@@ -5,6 +5,7 @@ import {
   BiLogoTailwindCss,
 } from "react-icons/bi";
 import Project from "./Project";
+import { DiCss3 } from "react-icons/di";
 
 const projects = [
   {
@@ -38,7 +39,7 @@ const projects = [
     name: "Weather App",
     image: "./images/WeatherApp.jpg",
     info: "The app allows the user to search for any city in the world and see what's the current weather in there.",
-    builtWith: [<BiLogoJavascript />],
+    builtWith: [<DiCss3 />, <BiLogoJavascript />],
     live: "https://dvin12.github.io/WeatherApp/",
     github: "https://github.com/Dvin12/WeatherApp",
   },
@@ -47,7 +48,7 @@ const projects = [
     name: "To-Do App",
     image: "./images/TodoApp.jpg",
     info: "The app allows the user organise their daily tasks, cross them and delete once finished. It also saves the data in the local storage.",
-    builtWith: [<BiLogoJavascript />],
+    builtWith: [<DiCss3 />, <BiLogoJavascript />],
     live: "https://dvin12.github.io/ToDoList/",
     github: "https://github.com/Dvin12/ToDoList",
   },
@@ -55,7 +56,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects">
       <div className="relative flex items-center px-9 xl:px-36">
         <h2 className="text-2xl font-bold tracking-tighter text-veryDarkGrey dark:text-white xl:text-4xl ">
           PROJECTS
