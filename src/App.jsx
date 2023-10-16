@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [theme, setTheme] = useState(null);
@@ -30,6 +31,7 @@ export default function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </Main>
   );
 }

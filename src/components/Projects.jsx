@@ -61,7 +61,7 @@ export default function Projects() {
         <h2 className="text-2xl font-bold tracking-tighter text-veryDarkGrey dark:text-white xl:text-4xl ">
           PROJECTS
         </h2>
-        <span className="h-[1px] bg-veryDarkGrey w-full absolute left-[9.8rem] dark:bg-white xl:left-1/2 xl:-translate-x-1/2 xl:w-1/2" />
+        <span className="h-[1px] bg-veryDarkGrey w-[43%] absolute right-10  dark:bg-white xl:left-1/2 xl:-translate-x-1/2 xl:w-1/2" />
       </div>
       <div className="flex flex-col my-10 xl:py-32 xl:gap-28">
         {projects.map((project, i) => (
