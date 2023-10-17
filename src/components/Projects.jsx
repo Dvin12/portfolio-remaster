@@ -18,7 +18,7 @@ const projects = [
   },
 
   {
-    name: "LapLense",
+    name: "LapLens",
     image: "./images/Ecommerce.jpg",
     info: "E-commerce app where users can browse products, add them to their cart, and easily adjust the quantity of each item.",
     builtWith: [<BiLogoTailwindCss />, <BiLogoReact />],
@@ -57,13 +57,13 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects">
-      <div className="relative flex items-center px-9 xl:px-36">
+      <div className="relative flex items-center px-9 2xl:px-36 xl:px-24">
         <h2 className="text-2xl font-bold tracking-tighter text-veryDarkGrey dark:text-white xl:text-4xl ">
           PROJECTS
         </h2>
-        <span className="h-[1px] bg-veryDarkGrey w-[43%] absolute right-10  dark:bg-white xl:left-1/2 xl:-translate-x-1/2 xl:w-1/2" />
+        <span className="h-[1px] bg-veryDarkGrey w-[43%] md:w-[74%] absolute right-10  dark:bg-white xl:left-1/2 xl:-translate-x-1/2 2xl:w-1/2 xl:w-[40%]" />
       </div>
-      <div className="flex flex-col my-10 xl:py-32 xl:gap-28">
+      <div className="flex flex-col my-10 gap-14 xl:py-32 xl:gap-28">
         {projects.map((project, i) => (
           <Project key={i} project={project} />
         ))}

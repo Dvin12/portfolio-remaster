@@ -19,7 +19,7 @@ export default function MobileNav({ theme, handleTheme }) {
             theme === "light" ? "logo-light.png" : "logo-dark.png"
           }`}
           alt="logo"
-          className="w-[14%]"
+          className="w-[2rem]  "
         />
         {isActive ? (
           ""

@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 
 export default function DesktopNav({ theme, handleTheme }) {
   return (
-    <nav className="items-center justify-between hidden px-20 py-10 xl:flex">
+    <nav className="items-center justify-between hidden py-10 xl:px-10 2xl:px-20 xl:flex">
       <span className="text-3xl font-bold tracking-tighter text-veryDarkGrey dark:text-white">
         EV
       </span>
