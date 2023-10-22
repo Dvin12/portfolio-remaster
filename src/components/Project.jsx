@@ -13,11 +13,14 @@ export default function Project({ project }) {
       <div className="absolute xl:top-4 bg-transparent 2xl:right-56 xl:w-[200px] w-[80px] h-[50px] top-3 right-3 xl:right-14 xl:h-[160px] xl:border-t-[3px] xl:border-r-[3px] border-t-[2px] border-r-[2px] rounded-tr dark:border-yellowGreen  "></div>
       <section className="grid xl:grid-cols-2 xl:h-[45rem] 2xl:px-10 relative grid-cols-1  items-center justify-center py-4 ">
         <div className="relative flex w-auto h-auto xl:items-center xl:justify-center xl:order-last ">
-          <img
-            src={image}
-            alt={name}
-            className="z-30 xl:px-0 drop-shadow-md xl:h-fit"
-          />
+          <a
+            href={live}
+            target="_blank"
+            rel="noreferrer"
+            className="z-30 duration-200 cursor-pointer xl:px-0 drop-shadow-md xl:h-fit hover:opacity-80"
+          >
+            <img src={image} alt={name}></img>
+          </a>
           <div className="absolute z-10 w-full h-full xl:-bottom-10 -bottom-5 md:-bottom-12 -right-5 xl:-right-10 bg-darkGrey bg-opacity-10 "></div>
         </div>
         <aside className="flex flex-col xl:justify-center xl:w-[80%] 2xl:px-4 my-14 xl:my-0 md:my-20 ">
@@ -38,12 +41,16 @@ export default function Project({ project }) {
             <div className="flex gap-2 text-2xl ">
               <a
                 href={live}
+                target="_blank"
+                rel="noreferrer"
                 className="duration-200 hover:text-opacity-70 text-veryDarkGrey dark:text-white dark:hover:text-opacity-60"
               >
                 <TbExternalLink />
               </a>
               <a
                 href={github}
+                target="_blank"
+                rel="noreferrer"
                 className="duration-200 hover:text-opacity-70 text-veryDarkGrey dark:text-white dark:hover:text-opacity-60"
               >
                 <AiFillGithub />

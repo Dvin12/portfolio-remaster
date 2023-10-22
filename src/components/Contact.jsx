@@ -12,11 +12,11 @@ export default function Contact() {
         </h2>
         <span className="h-[1px] bg-veryDarkGrey w-[60%] absolute right-0 md:w-[83%]  dark:bg-white xl:left-1/2 xl:-translate-x-1/2 2xl:w-1/2 xl:w-[40%]" />
       </div>
-      <div className="flex flex-col items-center justify-center py-10 text-center xl:px-80 dark:text-white text-veryDarkGrey">
+      <div className="flex flex-col items-center justify-center py-10 text-center 2xl:px-80 dark:text-white text-veryDarkGrey">
         <h3 className="text-2xl font-bold tracking-tighter xl:text-5xl">
           Let's Talk.
         </h3>
-        <p className="py-8 xl:text-xl 2xl:w-[50%] leading-relaxed font-medium">
+        <p className="py-8 xl:text-xl md:w-[65%] xl:w-[50%]  leading-relaxed font-medium">
           I'm currently available full-time and looking for new opportunities.
           Feel free to call or send me a message.
         </p>
